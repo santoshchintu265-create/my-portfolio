@@ -1,578 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Projects -->
+<section id="projects">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2 class="section-title">My Projects</h2>
 
-    <meta name="description"
-          content="Santosh's personal portfolio - Python Developer and Web Developer">
+    <div class="project-container">
 
-    <title>Santosh | Python Developer</title>
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>QR Code Generator</h3>
 
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='style.css') }}">
-</head>
+            <p>
+                A Python-based application that generates a QR code
+                from a URL and saves it as a PNG image.
+            </p>
 
-<body>
+            <p class="tech">
+                Python • QR Code Library
+            </p>
 
-    <!-- ================= NAVBAR ================= -->
-
-    <header class="navbar">
-
-        <a href="#home" class="logo">
-            Santosh<span>.</span>
-        </a>
-
-        <nav class="nav-links" id="navLinks">
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-        <div class="nav-actions">
-
-            <button id="themeToggle"
-                    class="icon-button"
-                    aria-label="Toggle dark mode">
-                🌙
-            </button>
-
-            <button id="menuToggle"
-                    class="menu-button"
-                    aria-label="Open menu">
-                ☰
-            </button>
-
+            <a href="https://github.com/santoshchintu265-create/project2/blob/main/1.py"
+               target="_blank"
+               class="project-link">
+                View Code →
+            </a>
         </div>
 
-    </header>
 
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Employee Payroll System</h3>
 
-    <!-- ================= HERO ================= -->
+            <p>
+                A simple payroll management application that takes
+                employee details, hours worked and pay rate to
+                calculate the total salary.
+            </p>
 
-    <main>
+            <p class="tech">
+                HTML • CSS • JavaScript
+            </p>
 
-        <section id="home" class="hero">
+            <a href="https://github.com/santoshchintu265-create/python-mini-project"
+               target="_blank"
+               class="project-link">
+                View Code →
+            </a>
+        </div>
 
-            <div class="hero-content reveal">
 
-                <p class="eyebrow">
-                    HELLO, I'M
-                </p>
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
 
-                <h1>
-                    Santosh
-                    <span>Python Developer.</span>
-                </h1>
+            <p>
+                A responsive personal portfolio website showcasing
+                my profile, skills, projects and contact information.
+            </p>
 
-                <p class="hero-description">
-                    I build modern web applications, automation tools
-                    and software using Python and modern web technologies.
-                </p>
+            <p class="tech">
+                Python • Flask • HTML • CSS
+            </p>
 
-                <div class="hero-buttons">
+            <a href="/" class="project-link">
+                Live Website →
+            </a>
+        </div>
 
-                    <a href="#projects" class="btn primary">
-                        View My Work
-                    </a>
+    </div>
 
-                    <a href="#contact" class="btn outline">
-                        Let's Talk
-                    </a>
-
-                </div>
-
-                <div class="socials">
-
-                    <!-- Replace # with your actual links -->
-
-                    <a href="#"
-                       target="_blank"
-                       aria-label="GitHub">
-                        GitHub
-                    </a>
-
-                    <a href="#"
-                       target="_blank"
-                       aria-label="LinkedIn">
-                        LinkedIn
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-image reveal">
-
-                <div class="image-glow"></div>
-
-                <img
-                    src="{{ url_for('static', filename='images/profile.jpeg') }}"
-                    alt="Santosh profile photo"
-                    class="profile-image"
-                >
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="eyebrow">ABOUT ME</p>
-
-                <h2>
-                    Turning ideas into
-                    <span>useful software.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-text reveal">
-
-                    <p>
-                        I'm a passionate Python developer who enjoys
-                        building practical applications and modern
-                        websites.
-                    </p>
-
-                    <p>
-                        I love learning new technologies, solving
-                        programming problems and creating projects
-                        that can be useful in the real world.
-                    </p>
-
-                    <p>
-                        My current focus is Python, Flask, web
-                        development and building full-stack projects.
-                    </p>
-
-                </div>
-
-
-                <div class="info-card reveal">
-
-                    <div class="info-item">
-                        <span>Location</span>
-                        <strong>India</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>Role</span>
-                        <strong>Python Developer</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>Focus</span>
-                        <strong>Web Development</strong>
-                    </div>
-
-                    <div class="info-item">
-                        <span>Available</span>
-                        <strong class="available">
-                            ● Open to opportunities
-                        </strong>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills" class="section skills-section">
-
-            <div class="section-heading reveal">
-
-                <p class="eyebrow">MY SKILLS</p>
-
-                <h2>
-                    Technologies I
-                    <span>work with.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>Python</h3>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="90"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>HTML / CSS</h3>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="90"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>Flask</h3>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="80"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>JavaScript</h3>
-                        <span>75%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="75"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>Git / GitHub</h3>
-                        <span>75%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="75"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-top">
-                        <h3>SQL</h3>
-                        <span>70%</span>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar"
-                             data-width="70"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="eyebrow">MY WORK</p>
-
-                <h2>
-                    Featured
-                    <span>projects.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio built with
-                        Flask, HTML, CSS and JavaScript.
-                    </p>
-
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <a href="#"
-                       class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <h3>Python Automation</h3>
-
-                    <p>
-                        An automation application designed to reduce
-                        repetitive tasks and improve productivity.
-                    </p>
-
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Automation</span>
-                        <span>API</span>
-                    </div>
-
-                    <a href="#"
-                       class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <h3>Web Application</h3>
-
-                    <p>
-                        A full-stack web application with a Python
-                        backend and responsive frontend.
-                    </p>
-
-                    <div class="tags">
-                        <span>Flask</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-
-                    <a href="#"
-                       class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= RESUME ================= -->
-
-        <section class="resume-section">
-
-            <div class="resume-box reveal">
-
-                <div>
-
-                    <p class="eyebrow">
-                        MY RESUME
-                    </p>
-
-                    <h2>
-                        Want to know more
-                        about my experience?
-                    </h2>
-
-                </div>
-
-                <a href="{{ url_for('static', filename='resume.pdf') }}"
-                   class="btn primary"
-                   download>
-                    Download Resume ↓
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact" class="section contact-section">
-
-            <div class="section-heading reveal">
-
-                <p class="eyebrow">CONTACT</p>
-
-                <h2>
-                    Let's build something
-                    <span>together.</span>
-                </h2>
-
-                <p>
-                    Have a project, opportunity or question?
-                    Send me a message.
-                </p>
-
-            </div>
-
-
-            {% with messages = get_flashed_messages(with_categories=true) %}
-
-                {% if messages %}
-
-                    <div class="flash-container">
-
-                        {% for category, message in messages %}
-
-                            <div class="flash {{ category }}">
-                                {{ message }}
-                            </div>
-
-                        {% endfor %}
-
-                    </div>
-
-                {% endif %}
-
-            {% endwith %}
-
-
-            <form
-                action="{{ url_for('contact') }}"
-                method="POST"
-                class="contact-form reveal"
-            >
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="your@email.com"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="Tell me about your project..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit"
-                        class="btn primary">
-                    Send Message →
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <p>
-            © 2026 Santosh. Built with Python & Flask.
-        </p>
-
-        <a href="#home">
-            Back to top ↑
-        </a>
-
-    </footer>
-
-
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-
-</body>
-
-</html>
+</section>
